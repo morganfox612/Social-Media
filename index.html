@@ -4,10 +4,41 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <title></title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template:500px / 40% 40%;
+      }
+
+      .grid section:nth-child(1){
+        background: pink;
+      }
+
+      .grid section:nth-child(2){
+        background: aqua;
+      }
+    </style>
   </head>
   <body>
      <h1>Social Media</h1>
      <p>Join Millions of addicted children on this platform!</p>
+
+      <div class="grid">
+       <section>
+         <form action="#" id="user1-form">
+           <label>Enter a message</label><br>
+           <textarea rows="8" cols="25" id="msg-content"></textarea>
+           <br>
+           <input type="submit" value="Send Message" id="user1-send-btn">
+         </form>
+       </section>
+       <section>Right
+        <div id="user2-inbox"></div>
+        </section>
+      </div>
+      <input type="submit" value="block" id="block-btn">
+      <input type="submit" value="unblock" id="unblock-btn">
+
     <script src="main.js"></script>
   </body>
 </html>
